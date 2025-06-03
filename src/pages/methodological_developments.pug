@@ -1,0 +1,19 @@
+
+extends ../layouts/default
+
+block vars
+  - const pageTitle = "Методические разработки"
+
+block content
+  include ../blocks/cover
+  include ../blocks/links
+  include ../blocks/pdfView
+
+  +cover("Методические разработки")
+
+  section.container
+      +pdfView("/assets/test.pdf")
+  section.container
+    +links([{"href":"#","text":"Ссылка 1"},{"href":"#","text":"Ссылка 2"}])
+
+  script(src="../scripts/pdf.js")

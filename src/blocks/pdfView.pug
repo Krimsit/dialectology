@@ -1,0 +1,11 @@
+mixin pdfView(pdfUrl)
+    .pdfView
+        input(hidden=true, value=pdfUrl)#pdfUrl
+        .pdfControl
+            .pdfButtons
+                button#prev.pdfButton Prev
+                button#next.pdfButton Next
+            .pdfButtons
+                span.pdfPages Page: <span id="page_num"></span> / <span id="page_count"></span>
+                a(href=pdfUrl, download=pdfUrl).pdfButton Скачать
+        canvas#pdfCanvas.pdvCanvas

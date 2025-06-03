@@ -1,0 +1,13 @@
+mixin infoBlock(blocks)
+    each blockContent, index in blocks
+        .infoBlock(class=index % 2 === 0 && "colored")
+            .container
+                .infoBlockContent
+                    if index % 2 !== 0
+                        img(src=blockContent.image, alt=blockContent.title).infoBlockImage
+                    .infoBlockText
+                        h2.infoBlockTextTitle #{blockContent.title}
+                        p.infoBlockTextDescription #{blockContent.description}
+                        a(href=blockContent.link).infoBlockTextLink Подробнее
+                    if index % 2 === 0
+                        img(src=blockContent.image, alt=blockContent.title).infoBlockImage

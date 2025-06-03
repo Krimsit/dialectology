@@ -1,0 +1,10 @@
+mixin cover(title, description, image)
+    .cover
+        .container
+            .coverContent
+                .coverText(class=!image && 'coverTextCentered')
+                    h1.coverTextTitle=title
+                    if description
+                        p.coverTextDescription=description
+                if image
+                    img(src=image, altText=title).coverImage

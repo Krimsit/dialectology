@@ -1,0 +1,45 @@
+{
+  "layout": {
+    "header": {
+      "links": [
+        {
+          "href": "methodological_developments",
+          "text": "Методические разработки"
+        }
+      ]
+    }
+  },
+  "mainPage": {
+    "title": "Добро пожаловать в мир диалектов!",
+    "description": "Изучайте богатство и разнообразие живой речи: от тончайших фонетических различий до уникальных грамматических форм. Погрузитесь в диалектологию — науку, которая открывает, как говорит народ и почему это важно.",
+    "coverImage": "main.png",
+    "blocks": [
+      {
+        "title": "История изучения диалектологии как науки",
+        "description": "Описание",
+        "link": "since_history",
+        "image": "block.jpg"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "type": "docx",
+      "docxPath": "./content_reference.docx",
+      "pagePath": "since_history",
+      "pageTitle": "История изучения диалектологии как науки",
+      "findHeader": {
+        "level": 2,
+        "text": "1.1. История изучения диалектологии как науки"
+      },
+      "links": [{ "href": "#", "text": "Ссылка 1" }, { "href": "#", "text": "Ссылка 2" }]
+    },
+    {
+      "type": "pdf",
+      "pagePath": "methodological_developments",
+      "pageTitle": "Методические разработки",
+      "pdfPath": "test.pdf",
+      "links": [{ "href": "#", "text": "Ссылка 1" }, { "href": "#", "text": "Ссылка 2" }]
+    }
+  ]
+}

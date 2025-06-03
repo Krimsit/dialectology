@@ -1,0 +1,4 @@
+mixin links(links)
+  .linksContainer
+    each linksContent in links
+        a(href=linksContent.href).link=linksContent.text

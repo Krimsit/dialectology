@@ -1,0 +1,29 @@
+{
+  "name": "diplom-lola",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "generate-site-content": "gulp generate-site-content"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "browser-sync": "^3.0.4",
+    "gulp": "^5.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-terser": "^2.1.0",
+    "jsdom": "^26.1.0",
+    "mammoth": "^1.9.1",
+    "pug-plugin": "^6.0.0",
+    "rimraf": "^6.0.1",
+    "sass": "^1.87.0"
+  }
+}
