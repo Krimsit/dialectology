@@ -1,0 +1,56 @@
+.cover {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  width: 100%;
+  max-width: 100%;
+  padding: 96px 0;
+  flex: 1;
+}
+
+.coverContent {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  flex: 1;
+}
+
+.coverText {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  flex: 1;
+  justify-content: center;
+}
+.coverText.coverTextCentered {
+  justify-content: flex-start;
+}
+.coverText.coverTextCentered .coverTextTitle, .coverText.coverTextCentered .coverTextDescription {
+  text-align: center;
+}
+
+.coverTextTitle {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: -0.96px;
+  margin: 0;
+}
+
+.coverTextDescription {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.12px;
+  margin: 0;
+}
+
+.coverImage {
+  border-radius: 12px;
+  border: 1.5px solid #D9D9D9;
+  width: 650px;
+  height: 650px;
+  object-fit: cover;
+}
