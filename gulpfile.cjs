@@ -101,7 +101,7 @@ gulp.task('generate-site-content', async () => {
 })
 
 // Сборка
-gulp.task('build', gulp.series('clean', gulp.parallel('generate-site-content', 'html', 'styles', 'scripts', 'assets')));
+gulp.task('build', gulp.series('clean', gulp.parallel('html', 'styles', 'scripts', 'assets')));
 
 // По умолчанию
 gulp.task('default', gulp.series('build', 'serve'));
