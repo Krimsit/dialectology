@@ -8,6 +8,6 @@ mixin infoBlock(blocks)
                     .infoBlockText
                         h2.infoBlockTextTitle #{blockContent.title}
                         p.infoBlockTextDescription #{blockContent.description}
-                        a(href=blockContent.link).infoBlockTextLink Подробнее
+                        a(href=basePath + blockContent.link).infoBlockTextLink Подробнее
                     if index % 2 === 0
                         img(src=basePath + blockContent.image, alt=blockContent.title).infoBlockImage
