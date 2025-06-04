@@ -7,4 +7,4 @@ mixin cover(title, description, image)
                     if description
                         p.coverTextDescription=description
                 if image
-                    img(src=image, altText=title).coverImage
+                    img(src=basePath + image, altText=title).coverImage

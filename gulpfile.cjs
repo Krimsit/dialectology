@@ -21,7 +21,11 @@ gulp.task('clean', () => rimraf(buildDir));
 gulp.task('html', () =>
     gulp
     .src('src/**/*.pug')
-    .pipe(pug())
+    .pipe(pug({
+      locals: {
+        basePath: '/dialectology'
+      }
+    }))
     .pipe(gulp.dest(buildDir))
     .pipe(bs.stream())
 );

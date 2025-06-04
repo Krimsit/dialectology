@@ -1,6 +1,6 @@
 mixin pdfView(pdfUrl)
     .pdfView
-        input(hidden=true, value=pdfUrl)#pdfUrl
+        input(hidden=true, value=basePath + pdfUrl)#pdfUrl
         .pdfControl
             .pdfButtons
                 button#prev.pdfButton Prev

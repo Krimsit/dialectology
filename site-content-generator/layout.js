@@ -5,7 +5,7 @@ const {OUTPUT_DIR} = require('./constants');
 const generateLayoutHeaderLinksPugMarkup = (links) => {
   return `
 .headerLinksContainer
-    ${links.map(link => `a(href="/pages/${link.href}.html").headerLink ${link.text}`)}
+    ${links.map(link => `a(href=basePath + "/pages/${link.href}.html").headerLink ${link.text}`)}
 `
 }
 

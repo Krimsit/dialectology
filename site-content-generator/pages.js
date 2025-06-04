@@ -51,7 +51,7 @@ block content
       +pdfView("/assets/${pdfUrl}")
   ${links ? generatePageLinksPugMarkup(links) : ''}
 
-  script(src="/scripts/pdf.js")
+  script(src=basePath + "/scripts/pdf.js")
 `
 }
 
