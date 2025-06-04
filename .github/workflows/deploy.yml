@@ -8,6 +8,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      SITE_BASE_PATH: /dialectology
 
     steps:
       - name: Checkout source

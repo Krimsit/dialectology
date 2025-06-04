@@ -24,7 +24,7 @@ gulp.task('html', () =>
     .src('src/**/*.pug')
     .pipe(pug({
       locals: {
-        basePath: process.env.BASE_PATH || '',
+        basePath: process.env.SITE_BASE_PATH || '',
       }
     }))
     .pipe(gulp.dest(buildDir))
