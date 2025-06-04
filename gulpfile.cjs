@@ -9,6 +9,7 @@ const { rimraf } = require('rimraf')
 const fs = require('fs');
 const path = require('path');
 const generateSiteContent = require('./site-content-generator/index');
+require('dotenv').config();
 
 const bs = browserSync.create();
 const scss = sass(dartSass);
@@ -23,7 +24,7 @@ gulp.task('html', () =>
     .src('src/**/*.pug')
     .pipe(pug({
       locals: {
-        basePath: '/dialectology'
+        basePath: process.env.BASE_PATH,
       }
     }))
     .pipe(gulp.dest(buildDir))
