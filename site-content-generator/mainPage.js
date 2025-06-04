@@ -13,8 +13,8 @@ block content
     include ./blocks/cover
     include ./blocks/infoBlock
     
-    +cover("${cover.title}", "${cover.description}", "/assets/${cover.image}")
-    +infoBlock(${JSON.stringify(infoBlocks.map(item => ({ ...item, link: `/pages/${item.link}.html`, image: `/assets/${item.image}` })))})
+    +cover("${cover.title}", "${cover.description}", "assets/${cover.image}")
+    +infoBlock(${JSON.stringify(infoBlocks.map(item => ({ ...item, link: `pages/${item.link}.html`, image: `assets/${item.image}` })))})
 `
 }
 

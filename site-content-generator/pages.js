@@ -48,10 +48,10 @@ block content
   +cover("${title}")
 
   section.container
-      +pdfView("/assets/${pdfUrl}")
+      +pdfView("assets/${pdfUrl}")
   ${links ? generatePageLinksPugMarkup(links) : ''}
 
-  script(src="../scripts/pdf.js")
+  script(src="scripts/pdf.js")
 `
 }
 
