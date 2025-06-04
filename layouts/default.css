@@ -31,7 +31,7 @@ body {
   width: 32px;
   height: 32px;
   background-color: currentColor;
-  mask: url("assets/logo.svg") no-repeat center;
+  mask: url("/assets/logo.svg") no-repeat center;
 }
 
 .logoTitle {
