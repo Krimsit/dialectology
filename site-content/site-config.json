@@ -17,7 +17,31 @@
       {
         "title": "История изучения диалектологии как науки",
         "description": "Описание",
-        "link": "since_history",
+        "link": "history_of_the_study_of_dialectology_as_a_science",
+        "image": "block.jpg"
+      },
+      {
+        "title": "История изучения и описания владимирских говоров",
+        "description": "Описание",
+        "link": "history_of_the_study_and_description_of_vladimir_colloquialisms",
+        "image": "block.jpg"
+      },
+      {
+        "title": "Диалектное членение русского языка",
+        "description": "Описание",
+        "link": "dialectal_division_of_the_russian_language",
+        "image": "block.jpg"
+      },
+      {
+        "title": "Диалектные особенности владимирских говоров",
+        "description": "Описание",
+        "link": "dialect_peculiarities_of_vladimir_dialects",
+        "image": "block.jpg"
+      },
+      {
+        "title": "Диалектологи",
+        "description": "Описание",
+        "link": "dialectologists",
         "image": "block.jpg"
       }
     ]
@@ -25,14 +49,117 @@
   "pages": [
     {
       "type": "docx",
-      "docxPath": "./content_reference.docx",
-      "pagePath": "since_history",
+      "docxPath": "./История_изучения_диалектологии_как_науки.docx",
+      "pagePath": "history_of_the_study_of_dialectology_as_a_science",
       "pageTitle": "История изучения диалектологии как науки",
       "findHeader": {
-        "level": 2,
-        "text": "1.1. История изучения диалектологии как науки"
+        "level": 1,
+        "text": "История изучения диалектологии как науки"
+      }
+    },
+    {
+      "type": "docx",
+      "docxPath": "./История_изучения_и_описания_владимирских_говоров.docx",
+      "pagePath": "history_of_the_study_and_description_of_vladimir_colloquialisms",
+      "pageTitle": "История изучения и описания владимирских говоров",
+      "findHeader": {
+        "level": 1,
+        "text": "История изучения и описания владимирских говоров: экспедиционная работа и полевые исследования"
       },
-      "links": [{ "href": "#", "text": "Ссылка 1" }, { "href": "#", "text": "Ссылка 2" }]
+      "links": [
+        {
+          "href": "modern_research_and_digitalization",
+          "text": "Современные исследования и цифровизация"
+        },
+        {
+          "href": "relation_of_folklore_and_dialectology",
+          "text": "Связь фольклора и диалектологии"
+        }
+      ]
+    },
+    {
+      "type": "docx",
+      "docxPath": "./История_изучения_и_описания_владимирских_говоров.docx",
+      "pagePath": "modern_research_and_digitalization",
+      "pageTitle": "Современные исследования и цифровизация",
+      "findHeader": {
+        "level": 1,
+        "text": "Современные исследования и цифровизация"
+      },
+      "links": [
+        {
+          "href": "history_of_the_study_and_description_of_vladimir_colloquialisms",
+          "text": "История изучения и описания владимирских говоров"
+        }
+      ]
+    },
+    {
+      "type": "docx",
+      "docxPath": "./История_изучения_и_описания_владимирских_говоров.docx",
+      "pagePath": "relation_of_folklore_and_dialectology",
+      "pageTitle": "Связь фольклора и диалектологии",
+      "findHeader": {
+        "level": 1,
+        "text": "Связь фольклора и диалектологии"
+      },
+      "links": [
+        {
+          "href": "history_of_the_study_and_description_of_vladimir_colloquialisms",
+          "text": "История изучения и описания владимирских говоров"
+        }
+      ]
+    },
+    {
+      "type": "docx",
+      "docxPath": "./Диалектное_членение_русского_языка.docx",
+      "pagePath": "dialectal_division_of_the_russian_language",
+      "pageTitle": "Диалектное членение русского языка",
+      "findHeader": {
+        "level": 1,
+        "text": "Диалектное членение русского языка"
+      },
+      "links": [
+        {
+          "href": "central_russian_colloquialism",
+          "text": "Среднерусский говор"
+        }
+      ]
+    },
+    {
+      "type": "docx",
+      "docxPath": "./Диалектное_членение_русского_языка.docx",
+      "pagePath": "central_russian_colloquialism",
+      "pageTitle": "Среднерусский говор",
+      "findHeader": {
+        "level": 1,
+        "text": "Среднерусский говор"
+      },
+      "links": [
+        {
+          "href": "dialectal_division_of_the_russian_language",
+          "text": "Диалектное членение русского языка"
+        }
+      ]
+    },
+    {
+      "type": "docx",
+      "docxPath": "./Диалектные_особенности_владимирских_говоров.docx",
+      "pagePath": "dialect_peculiarities_of_vladimir_dialects",
+      "pageTitle": "Диалектные особенности владимирских говоров",
+      "findHeader": {
+        "level": 1,
+        "text": "Диалектные особенности владимирских говоров"
+      }
+    },
+    {
+      "type": "docx",
+      "docxPath": "./Диалектологи.docx",
+      "pagePath": "dialectologists",
+      "pageTitle": "Диалектологи",
+      "findHeader": {
+        "level": 1,
+        "text": "Диалектологи"
+      }
     },
     {
       "type": "pdf",
