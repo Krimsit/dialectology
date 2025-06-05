@@ -4,7 +4,7 @@ mixin infoBlock(blocks)
             .container
                 .infoBlockContent
                     if index % 2 !== 0
-                        img(src=blockContent.image, alt=blockContent.title).infoBlockImage
+                        img(src=blockContent.image, alt=basePath + blockContent.title).infoBlockImage
                     .infoBlockText
                         h2.infoBlockTextTitle #{blockContent.title}
                         p.infoBlockTextDescription #{blockContent.description}
