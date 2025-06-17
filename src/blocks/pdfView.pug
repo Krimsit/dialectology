@@ -3,8 +3,8 @@ mixin pdfView(pdfUrl)
         input(hidden=true, value=basePath + pdfUrl)#pdfUrl
         .pdfControl
             .pdfButtons
-                button#prev.pdfButton Prev
-                button#next.pdfButton Next
+                button#prev.pdfButton Назад
+                button#next.pdfButton Вперед
             .pdfButtons
                 span.pdfPages Page: <span id="page_num"></span> / <span id="page_count"></span>
                 a(href=pdfUrl, download=pdfUrl).pdfButton Скачать
