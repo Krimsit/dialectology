@@ -13,9 +13,14 @@ html(lang="ru")
             .container
                 .headerContent
                     a(href=basePath + "/").logo
-                        span(style="mask: url('" + basePath +"/assets/logo.svg') no-repeat center;").logoImage
+                        span(style="mask: url('" + basePath + "/assets/logo.svg') no-repeat center;").logoImage
                         span.logoTitle Диалектология
                     include headerLinks
 
         main.main
             block content
+        footer.footer
+            .container
+                .footerContent
+                    h2.footerTitle Обратная связь
+                    img(src=basePath + "/assets/qr-code.png", alt="QR код").footerImage

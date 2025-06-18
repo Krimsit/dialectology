@@ -43,6 +43,10 @@
   line-height: 24px;
   letter-spacing: -0.12px;
   margin: 0;
+
+  @media (max-width: 530px) {
+    display: none;
+  }
 }
 
 .pdvCanvas {

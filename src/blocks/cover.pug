@@ -5,6 +5,7 @@ mixin cover(title, description, image)
                 .coverText(class=!image && 'coverTextCentered')
                     h1.coverTextTitle=title
                     if description
-                        p.coverTextDescription=description
+                        p.coverTextDescription
+                            != description.replace(/\n/g, '<br>')
                 if image
                     img(src=basePath + image, altText=title).coverImage

@@ -14,14 +14,38 @@
   flex-direction: row;
   align-items: center;
   gap: 96px;
+
+  &.left {
+    flex-direction: row-reverse;
+
+    .infoBlockText {
+      text-align: right;
+      align-items: flex-end;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column-reverse;
+    gap: 20px;
+
+    &.left {
+      flex-direction: column-reverse;
+
+      .infoBlockText {
+        text-align: left;
+        align-items: flex-start;
+      }
+    }
+  }
 }
 
 .infoBlockText {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: flex-start;
   gap: 32px;
   flex: 1;
+  width: 100%;
 }
 
 .infoBlockTextTitle {
@@ -31,6 +55,12 @@
   line-height: 52px;
   letter-spacing: -0.48px;
   margin: 0;
+
+  @media (max-width: 1024px) {
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.32px;
+  }
 }
 
 .infoBlockTextDescription {
@@ -43,18 +73,28 @@
 }
 
 .infoBlockTextLink {
+  box-sizing: border-box;
   padding: 14px 24px;
   text-decoration: none;
   border-radius: 8px;
   background: variables.$backgroundPrimary;
   color: variables.$textLight;
   width: max-content;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 }
 
 .infoBlockImage {
-  width: 625px;
-  height: 485px;
+  width: 40%;
+  aspect-ratio: 4/3;
   object-fit: cover;
   border: 1.5px solid variables.$borderColor;
   border-radius: 12px;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    aspect-ratio: 16/4;
+  }
 }

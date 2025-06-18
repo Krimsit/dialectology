@@ -2,12 +2,10 @@ mixin infoBlock(blocks)
     each blockContent, index in blocks
         .infoBlock(class=index % 2 === 0 && "colored")
             .container
-                .infoBlockContent
-                    if index % 2 !== 0
-                        img(src=basePath + blockContent.image, alt=blockContent.title).infoBlockImage
+                .infoBlockContent(class=index % 2 !== 0 && "left")
                     .infoBlockText
                         h2.infoBlockTextTitle #{blockContent.title}
-                        p.infoBlockTextDescription #{blockContent.description}
+                        p.infoBlockTextDescription
+                            != blockContent.description.replace(/\n/g, '<br>')
                         a(href=basePath + blockContent.link).infoBlockTextLink Подробнее
-                    if index % 2 === 0
-                        img(src=basePath + blockContent.image, alt=blockContent.title).infoBlockImage
+                    img(src=basePath + blockContent.image, alt=blockContent.title).infoBlockImage

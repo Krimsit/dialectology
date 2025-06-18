@@ -1,9 +1,6 @@
 @use "../styles/_variables";
 
 .cover {
-  display: flex;
-  flex-direction: row;
-  gap: 48px;
   width: 100%;
   max-width: 100%;
   padding: 96px 0;
@@ -15,6 +12,11 @@
   flex-direction: row;
   gap: 48px;
   flex: 1;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .coverText {
@@ -40,6 +42,10 @@
   line-height: 48px;
   letter-spacing: -0.96px;
   margin: 0;
+
+  @media (max-width: 1024px) {
+    text-align: center;
+  }
 }
 
 .coverTextDescription {
@@ -54,7 +60,12 @@
 .coverImage {
   border-radius: 12px;
   border: 1.5px solid variables.$borderColor;
-  width: 650px;
-  height: 650px;
+  width: 50%;
+  aspect-ratio: 1/1;
   object-fit: cover;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
 }

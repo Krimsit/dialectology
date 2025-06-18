@@ -8,12 +8,16 @@ extends ./layouts/default
 
 block vars
   - const pageTitle = "${pageTitle}"
+  - const coverData = ${JSON.stringify({
+    ...cover,
+    image: `/assets/${cover.image}`
+  })}
   
 block content
     include ./blocks/cover
     include ./blocks/infoBlock
     
-    +cover("${cover.title}", "${cover.description}", "/assets/${cover.image}")
+    +cover(coverData.title, coverData.description, coverData.image)
     +infoBlock(${JSON.stringify(infoBlocks.map(item => ({ ...item, link: `/pages/${item.link}.html`, image: `/assets/${item.image}` })))})
 `
 }
