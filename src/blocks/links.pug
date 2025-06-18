@@ -1,4 +1,4 @@
 mixin links(links)
   .linksContainer
     each linksContent in links
-        a(href=basePath + linksContent.href + ".html").link=linksContent.text
+        a(href=basePath + "/pages" + linksContent.href + ".html").link=linksContent.text
