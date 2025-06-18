@@ -42,6 +42,11 @@
   letter-spacing: -0.12px;
   margin: 0;
 }
+@media (max-width: 530px) {
+  .pdfPages {
+    display: none;
+  }
+}
 
 .pdvCanvas {
   border-radius: 12px;

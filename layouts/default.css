@@ -6,6 +6,7 @@ body {
 .container {
   max-width: 1344px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .header {
@@ -41,6 +42,11 @@ body {
   line-height: 100%;
   letter-spacing: -0.96px;
 }
+@media (max-width: 530px) {
+  .logoTitle {
+    display: none;
+  }
+}
 
 .main {
   flex: 1;
@@ -67,4 +73,33 @@ body {
 }
 .headerLink:hover {
   color: #CC0B0B;
+}
+
+.footer {
+  padding: 96px 0 48px;
+  background-color: #CC0B0B;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footerTitle {
+  color: #FFFFFF;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 52px;
+  letter-spacing: -0.48px;
+  margin: 0;
+}
+
+.footerImage {
+  width: auto;
+  aspect-ratio: 1/1.25;
+  object-fit: cover;
+  border-radius: 12px;
 }
